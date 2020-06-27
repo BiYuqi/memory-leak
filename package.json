@@ -1,0 +1,32 @@
+{
+  "name": "memory-leak",
+  "version": "1.0.0",
+  "description": "self check list",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BiYuqi/memory-leak.git"
+  },
+  "keywords": [
+    "blog",
+    "d3.js",
+    "webpack",
+    "vue",
+    "three.js",
+    "openlayers"
+  ],
+  "author": "BiYuqi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BiYuqi/memory-leak/issues"
+  },
+  "homepage": "https://github.com/BiYuqi/memory-leak#readme",
+  "devDependencies": {
+    "vuepress": "^1.5.2"
+  }
+}
