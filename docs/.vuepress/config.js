@@ -1,9 +1,16 @@
 const devops = require('./devops')
 
 module.exports = {
+  base: '/',
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@assets': path.resolve(__dirname, '../assets')
+      }
+    }
+  },
   title: '在路上',
   description: 'Road of front-end growth',
-  base: '/',
   themeConfig: {
     nav: [
       { text: '主页', link: '/' },
@@ -21,5 +28,6 @@ module.exports = {
       '/devops-practice/': devops,
       '/visualization-practice/': []
     }
-  }
+  },
+  lastUpdated: 'Last Updated'
 }
