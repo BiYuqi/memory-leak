@@ -1,8 +1,8 @@
 const devops = require('./devops')
 
 module.exports = {
-  title: 'LoadingMore\'s blog',
-  description: '前端成长之路',
+  title: '在路上',
+  description: 'Road of front-end growth',
   base: '/',
   themeConfig: {
     nav: [

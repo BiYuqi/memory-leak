@@ -1,22 +1,23 @@
 ---
 home: true
-# heroImage: /hero.png
 heroText: null
-tagline: 系统学习前端, 总结日常开发中遇到的一些问题
-actionText: 开始阅读 →
-actionLink: /blog/
-features:
-- title: 简洁至上
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: Vue驱动
-  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-- title: 高性能
-  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
-- title: 简洁至上
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: Vue驱动
-  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-- title: 高性能
-  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
 footer: MIT Licensed | Copyright © 2020-present LoadingMore
 ---
+
+## 关于我
+坐标西安. 前端开发工程师一枚, 热爱编程, 喜欢研究不同的技术包括不限于前端领域, 喜欢用NodeJs开发一些脚手架工具提升开发效率, 最近在研究可视化方向.
+
+## [博客](/blog/)
+记录日常开发中遇到的编程问题以及解决方案.
+
+## [前端工程化](/frontend-engineering/)
+研究前端开发用到的工具, 库, 以及最佳实践
+
+## [Node实战](/node-practice/)
+研究Nodejs相关
+
+## [Devops实战](/devops-practice/)
+研究Devops实战
+
+## [可视化实战](/visualization-practice/)
+研究可视化实战方向(D3.js, Openlayers, Leaflet, Three.js等)
