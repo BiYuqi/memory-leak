@@ -32,10 +32,11 @@ module.exports = {
       '/devops-practice/': devops,
       '/visualization-practice/': []
     },
-    record: '陕ICP备20010208号-1',
+    record: '陕ICP备20010208号',
     recordLink: 'http://www.beian.miit.gov.cn/',
     cyberSecurityRecord: '陕公网安备号',
     cyberSecurityLink: 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=',
+    startYear: '2017'
   },
   lastUpdated: 'Last Updated'
 }
