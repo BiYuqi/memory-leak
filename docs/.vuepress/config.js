@@ -1,3 +1,4 @@
+const path = require('path')
 const devops = require('./devops')
 
 module.exports = {
@@ -10,8 +11,11 @@ module.exports = {
     }
   },
   title: '在路上',
-  description: 'Road of front-end growth',
+  description: 'Road of Front-End Growth',
+  theme: 'reco',
   themeConfig: {
+    noFoundPageByTencent: false,
+    smoothScroll: true,
     nav: [
       { text: '主页', link: '/' },
       { text: '博客', link: '/blog/' },
@@ -27,7 +31,11 @@ module.exports = {
       '/node-practice/': [],
       '/devops-practice/': devops,
       '/visualization-practice/': []
-    }
+    },
+    record: '陕ICP备20010208号',
+    recordLink: 'http://www.beian.miit.gov.cn/',
+    cyberSecurityRecord: '陕公网安备 号',
+    cyberSecurityLink: 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=',
   },
   lastUpdated: 'Last Updated'
 }

@@ -1,7 +1,6 @@
 ---
 home: true
 heroText: null
-footer: MIT Licensed | Copyright © 2020-present LoadingMore
 ---
 
 ## 关于我
