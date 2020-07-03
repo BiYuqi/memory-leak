@@ -1,7 +1,6 @@
 ---
 title: 服务器登录配置
 date: 2020-06-29
-sidebar: 'auto'
 ---
 
 首先, 买了服务器后要登录, 例如我购买的是阿里云的服务器，提供的有云端的命令行工具, 但是最方便的还是用终端, 使用`ssh`命令行登录:
@@ -84,3 +83,7 @@ ssh leak
 Host *
   ServerAliveInterval 60
 ```
+
+## 参考
+- [how-to-install-nodejs-on-centos-fedora](https://computingforgeeks.com/how-to-install-nodejs-on-centos-fedora/)
+- [nginx服务器详细安装过程（使用yum 和 源码包两种安装方式，并说明其区别](https://segmentfault.com/a/1190000007116797)

@@ -1,5 +1,6 @@
 const path = require('path')
 const devops = require('./devops')
+const blog = require('./blog')
 
 module.exports = {
   base: '/',
@@ -26,7 +27,7 @@ module.exports = {
       { text: 'Github', link: 'https://github.com/BiYuqi/memory-leak' },
     ],
     sidebar: {
-      '/blog/': [],
+      '/blog/': blog,
       '/frontend-engineering/': [],
       '/node-practice/': [],
       '/devops-practice/': devops,

@@ -1,6 +1,7 @@
-https://computingforgeeks.com/how-to-install-nodejs-on-centos-fedora/
+---
+title: 说明
+date: 2020-07-03 22:50:30
+---
 
-
-rpm -ql nginx
-
-https://segmentfault.com/a/1190000007116797
+:::warning
+该系列是从之前旧博客迁移至此`迁移进度10%`.
