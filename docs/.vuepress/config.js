@@ -11,7 +11,7 @@ module.exports = {
       }
     }
   },
-  title: '在路上',
+  title: 'On the way',
   description: 'Road of Front-End Growth',
   theme: 'reco',
   themeConfig: {
