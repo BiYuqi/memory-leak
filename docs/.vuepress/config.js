@@ -2,7 +2,7 @@ const path = require('path')
 const devops = require('./devops')
 const blog = require('./blog')
 
-module.exports = {
+const config = {
   base: '/',
   configureWebpack: {
     resolve: {
@@ -41,3 +41,19 @@ module.exports = {
   },
   lastUpdated: 'Last Updated'
 }
+
+if (process.env.NODE_ENV === "production") {
+  config.head = [
+    ['script', {}, `
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?3e0dd808fcb276feef04ab61d602df5e";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    `]
+  ]
+}
+
+module.exports = config
