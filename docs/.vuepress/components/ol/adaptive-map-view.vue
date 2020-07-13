@@ -12,7 +12,6 @@ import { OSM } from 'ol/source'
 import {defaults as defaultControls, Attribution} from 'ol/control';
 import { transform, transformExtent } from 'ol/proj'
 import bbox from '@turf/bbox'
-import { points } from '@turf/helpers'
 import { randomPoint } from '@turf/random'
 export default {
   name: 'adaptive-map-view',
@@ -38,8 +37,6 @@ export default {
   },
   methods: {
     randomPoints() {
-      // const pp = points([[107.394592,34.349378], [108.504212,35.233551], [110.003845,35.026893], [110.586121,34.167773], [109.512207,33.718903], [108.4328,33.325067], [107.284729,33.370954]])
-      // console.log(bbox(pp))
       const points = randomPoint(5, {bbox:  [107.284729, 33.325067, 110.586121, 35.233551]})
       const bboxs = bbox(points)
       this.map.getView().fit(transformExtent(bboxs, "EPSG:4326", "EPSG:3857"), {
