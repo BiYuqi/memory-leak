@@ -1,6 +1,7 @@
 const path = require('path')
 const devops = require('./devops')
 const blog = require('./blog')
+const visual = require('./visualization-practice')
 
 const config = {
   base: '/',
@@ -31,7 +32,7 @@ const config = {
       '/frontend-engineering/': [],
       '/node-practice/': [],
       '/devops-practice/': devops,
-      '/visualization-practice/': []
+      '/visualization-practice/': visual
     },
     record: '陕ICP备20010208号',
     recordLink: 'http://www.beian.miit.gov.cn/',

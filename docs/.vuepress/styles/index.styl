@@ -1,3 +1,4 @@
+@import "~ol/ol.css"
 body {
   font-size: 16px !important;
   color: #2c3e50;
@@ -11,4 +12,28 @@ body {
 .home .hero .description {
   font-size: 2rem !important;
   font-weight: 600;
+}
+
+
+/** 地图样式 **/
+.common-map-view {
+  width: 100%;
+
+  #map {
+    width: 100%;
+    height: 500px;
+    border 2px dashed #42b983;
+  }
+}
+
+.common-button {
+  outline none;
+  border: none;
+  border-radius: 5px;
+  background-color #3498db;
+  color: #fff;
+  padding 10px 15px;
+  margin 10px
+  font-size 16px;
+  cursor: pointer;
 }
