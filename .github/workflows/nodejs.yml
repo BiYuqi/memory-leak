@@ -2,9 +2,8 @@ name: deploy to aliyun oss
 
 on:
   push:
-  schedule:
-  - cron:  '30 20 * * *'
-
+    branches:
+      - master
 jobs:
   build:
 
