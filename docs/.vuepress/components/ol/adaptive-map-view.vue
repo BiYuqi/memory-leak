@@ -7,17 +7,32 @@
 
 <script>
 import * as ol from 'ol'
-import { Tile as TileLayer } from 'ol/layer'
+import { Tile as TileLayer, Vector as VectorLayer } from 'ol/layer'
+import { Vector as VectorSource } from 'ol/source'
 import { OSM } from 'ol/source'
-import {defaults as defaultControls, Attribution} from 'ol/control';
+import {defaults as defaultControls } from 'ol/control';
 import { transform, transformExtent } from 'ol/proj'
 import bbox from '@turf/bbox'
 import { randomPoint } from '@turf/random'
+import { Image, Icon, Fill, Stroke, Style, Circle } from 'ol/style'
+
+import { readGeoJSON } from '../../../utils/map/ol'
 export default {
   name: 'adaptive-map-view',
   data() {
     return {
-      map: null
+      map: null,
+      layer: null,
+      styles: [
+        new Style({
+          image: new Circle({
+            fill: new Fill({
+              color: '#F00'
+            }),
+            radius: 6
+          }),
+        })
+      ]
     }
   },
   mounted() {
@@ -36,9 +51,27 @@ export default {
     })
   },
   methods: {
+    removeLayer(layer) {
+      if (layer) {
+        this.map.removeLayer(layer)
+      }
+    },
+    renderPoints(data) {
+      this.removeLayer(this.layer)
+
+      this.layer = new VectorLayer({
+        source: new VectorSource({
+          features: readGeoJSON({ data })
+        }),
+        style: this.styles
+      })
+      this.map.addLayer(this.layer)
+    },
     randomPoints() {
-      const points = randomPoint(5, {bbox:  [107.284729, 33.325067, 110.586121, 35.233551]})
-      const bboxs = bbox(points)
+      const geojson = randomPoint(10, {bbox:  [107.284729, 33.325067, 110.586121, 35.233551]})
+      // 撒点测试
+      this.renderPoints(geojson)
+      const bboxs = bbox(geojson)
       this.map.getView().fit(transformExtent(bboxs, "EPSG:4326", "EPSG:3857"), {
         duration: 200
       });
