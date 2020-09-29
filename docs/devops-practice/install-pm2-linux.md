@@ -33,7 +33,7 @@ npm  nrm  pm2 pm2.tar.gz
 
 同样执行 npm config get prefix 看一下这台服务器的npm默认安装目录， 例如
 
-```sh
+```bash
 $ npm config get prefix
 /usr/nodejs
 ```
@@ -42,16 +42,16 @@ $ npm config get prefix
 
 解压
 
-```sh
+```bash
 tar xvf pm2.tar.gz
 ```
 
-```sh
+```bash
 cp -r ./pm2 /usr/nodejs/lib/node_modules
 ```
 重新编译安装
 
-```sh
+```bash
 cd /usr/nodejs/lib/node_modules
 
 npm build pm2 -g
@@ -61,12 +61,12 @@ npm build pm2 -g
 
 > 让pm2变为全局环境变量
 
-```sh
+```bash
 ln -s /usr/nodejs/bin/pm2 /usr/local/bin/
 ```
 
 ## 验证
-```sh
+```bash
 然后通过命令 pm2 -v检查是否安装成功!
 ```
 

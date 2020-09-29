@@ -39,6 +39,6 @@
     "@turf/random": "^6.0.2",
     "install": "^0.13.0",
     "ol": "^6.3.1",
-    "vuepress-theme-reco": "^1.4.7"
+    "vuepress-theme-reco": "^1.5.7"
   }
 }
