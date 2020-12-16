@@ -63,7 +63,8 @@ module.exports = [
     title: '其他技巧',
     collapsable: true,
     children: [
-      ['move-hexo', '换电脑后-如何完美迁出hexo博客']
+      ['move-hexo', '换电脑后-如何完美迁出hexo博客'],
+      ['nvm-in-compatible', 'mac使用nvm提示不兼容的前缀']
     ]
   },
   {
