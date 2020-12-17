@@ -1,5 +1,6 @@
 ---
 title: Linux下离线安装node.js(详细)
+tags: [Linux]
 date: 2020-09-24
 ---
 

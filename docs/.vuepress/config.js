@@ -2,6 +2,7 @@ const path = require('path')
 const devops = require('./devops')
 const blog = require('./blog')
 const visual = require('./visualization-practice')
+const building = require('./building')
 
 const config = {
   base: '/',
@@ -29,7 +30,7 @@ const config = {
     ],
     sidebar: {
       '/blog/': blog,
-      '/frontend-engineering/': [],
+      '/frontend-engineering/': building,
       '/node-practice/': [],
       '/devops-practice/': devops,
       '/visualization-practice/': visual
@@ -50,7 +51,7 @@ if (process.env.NODE_ENV === "production") {
       (function() {
         var hm = document.createElement("script");
         hm.src = "https://hm.baidu.com/hm.js?3e0dd808fcb276feef04ab61d602df5e";
-        var s = document.getElementsByTagName("script")[0]; 
+        var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
       })();
     `]

@@ -1,5 +1,6 @@
 ---
 title: Linux下离线安装pm2
+tags: [Linux]
 date: 2020-09-24
 ---
 
