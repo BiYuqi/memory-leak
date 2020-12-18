@@ -3,7 +3,7 @@ module.exports = [
     title: 'Npm',
     collapsable: true,
     children: [
-      ['npm-publish', 'NPM安装发布更新撤销包']
+      ['npm/npm-publish', 'NPM安装发布更新撤销包']
     ]
   },
   {

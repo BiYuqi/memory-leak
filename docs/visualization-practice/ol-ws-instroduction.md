@@ -9,7 +9,7 @@ date: 2020-07-16
 
 欢迎来到OpenLayer研讨会, 该系列旨在为您提供OpenLayers作为地图解决方案的全方位的了解。
 
-### 启动
+## 启动
 
 这些说明假设你使用的是最新发布的研讨会版本`openlayers-workshop-en.zip`. [workshop release](https://github.com/openlayers/workshop/releases).
 另外, 你还需要准备nodejs的开发环境(version >= 8)来运行我们的研讨会项目.
