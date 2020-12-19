@@ -5,7 +5,7 @@ const visual = require('./visualization-practice')
 const building = require('./building')
 
 const config = {
-  permalink: "/:year/:month/:day/:slug",
+  // permalink: "/:year/:month/:day/:slug",
   base: '/',
   configureWebpack: {
     resolve: {
