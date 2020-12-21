@@ -2,6 +2,7 @@
 home: true
 date: 2020-01-01 22:50:30
 heroText: null
+tagline: null
 ---
 
 ## 关于我
@@ -10,7 +11,6 @@ heroText: null
 - 喜欢用NodeJs开发一些脚手架工具提升开发效率.
 
 ## 开源及个人项目
-
 #### Package
 - [@ifake/pkg](https://github.com/ifakejs/pkg) 一个用于构建前端库的脚手架工具，支持多种构建工具(Rollup, Webpack).
 支持基于UI进行创建项目(类似于vue ui界面)

@@ -15,7 +15,7 @@ const config = {
     }
   },
   title: 'On the way',
-  description: 'Road of Front-End Growth',
+  description: '前端成长之路，分享前端(Javascript, Typescript, Webpack, Rollup)以及工具链相关文章.',
   theme: 'reco',
   themeConfig: {
     noFoundPageByTencent: false,
