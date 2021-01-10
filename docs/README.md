@@ -11,9 +11,9 @@ tagline: null
 - 喜欢用NodeJs开发一些脚手架工具提升开发效率.
 
 ## 开源及个人项目
-#### Package
-- [@ifake/pkg](https://github.com/ifakejs/pkg) 一个用于构建前端库的脚手架工具，支持多种构建工具(Rollup, Webpack).
-支持基于UI进行创建项目(类似于vue ui界面)
+**Package**
+- [@ifake/pkg](https://github.com/ifakejs/pkg) 一个用于构建前端库的脚手架工具，支持多种构建工具(Rollup, Webpack), 支持基于UI进行创建项目(类似于vue ui界面).
+- [@ifake/signature](https://github.com/ifakejs/signature) 基于HTML5 Canvas的签名库.
 - [@ifake/tree-path](https://github.com/ifakejs/tree-path) 根据条件获取树的节点.
 - [vue-intersection-observer](https://github.com/BiYuqi/vue-intersection-observer) 一个Vue插件，基于IntersectionObserver API.
 
