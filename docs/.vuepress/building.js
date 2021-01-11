@@ -15,5 +15,12 @@ module.exports = [
     title: 'Rollup',
     collapsable: true,
     children: []
+  },
+  {
+    title: 'Typescript',
+    collapsable: true,
+    children: [
+      ['ts/extract-type', '编写Typescript应用, 如何自动聚合types']
+    ]
   }
 ]
