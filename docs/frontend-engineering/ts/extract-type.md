@@ -116,7 +116,8 @@ touch api-extractor.json
   /* 重点关注 */
   "mainEntryPointFilePath": "./temp/src/index.d.ts",
   "apiReport": {
-    "enabled": false
+    "enabled": true,
+    "reportFolder": "<projectFolder>/temp/"
   },
   "docModel": {
     "enabled": true
@@ -173,15 +174,10 @@ touch api-extractor.json
 ### 总结
 如果要提取所有的类型，我们要做一下事情:
 
+`rimraf` 记得安装
+
 - 安装提取插件`@microsoft/api-extractor`
 - 配置插件`api-extractor.json`
 - 插件类型文件`tsconfig.type.json`
 - 配置命令 `"build:types": "tsc -p tsconfig.type.json && api-extractor run && rimraf ./temp"`
-- 请看注意事项
-
-### 注意事项
-
-- `api-extractor` 对编写的类型有很高的的要求，比如要尽量全部导出，这里建议单独的维护类型文件，然后导出，还有就是函数尽量都有返回类型
-- 本案例有单元测试`__test__`这几个目录，实测如果没有测试，tsconfig.json需要配置`rootDir: "src"`(本案例核心文件在src，所以配置如此)
-api-extractor.json 中改属性`mainEntryPointFilePath: "./temp/index.d.ts"`, 移除了`src`, 因为指定了rootDir,所以少了一层目录
 
