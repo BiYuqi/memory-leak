@@ -10,7 +10,8 @@ module.exports = [
     title: 'Npm',
     collapsable: true,
     children: [
-      ['npm/npm-publish', 'NPM安装发布更新撤销包']
+      ['npm/npm-publish', 'NPM安装发布更新撤销包'],
+      ['npm/keep-two-same-npm-library', '如何在一个项目里使用两种版本的npm包']
     ]
   },
   {
